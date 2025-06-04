@@ -9,6 +9,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
+    "@types/node": "^18.18.0",  
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
     "caniuse-lite": "^1.0.30001720",
@@ -42,7 +43,6 @@
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.7",
-    "@types/node": "^18.19.110",
     "@types/three": "^0.160.0",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.18",
