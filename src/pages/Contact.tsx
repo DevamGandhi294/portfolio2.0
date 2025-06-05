@@ -183,7 +183,7 @@ const Contact: React.FC = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-green-500/20 rounded-3xl transform -rotate-6"></div>
                   <div className="absolute inset-0 bg-gradient-to-br from-green-500/20 to-orange-500/20 rounded-3xl overflow-hidden">
                     <img 
-                      src="/pic/contact.jpg" 
+                      src="https://images.pexels.com/photos/10667753/pexels-photo-10667753.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
                       alt="Contact" 
                       className="w-full h-full object-cover opacity-50 hover:opacity-70 transition-opacity duration-300"
                     />
