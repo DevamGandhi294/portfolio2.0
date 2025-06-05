@@ -66,10 +66,15 @@ const Home: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
               <div className="relative rounded-lg overflow-hidden shadow-soft h-full transform hover:scale-[1.02] transition-transform duration-300">
-                <img 
-                  src="https://static.readdy.ai/image/a33c314a9c02a579d6173c720a39d07b/93b7a48bbcac6fe0ccb58bccf58ee5bd.webp" 
-                  alt="Gandhi Devam" 
-                  className="w-full h-[400px] object-cover rounded-lg border-4 border-primary/30"
+                <img
+                  src="https://static.readdy.ai/image/a33c314a9c02a579d6173c720a39d07b/93b7a48bbcac6fe0ccb58bccf58ee5bd.webp"
+                  style={{
+                    objectFit: 'cover',
+                    objectPosition: 'bottom',
+                    width: '100%',
+                    height: '400px',
+                    overflow: 'hidden',
+                  }}
                 />
               </div>
             </div>
