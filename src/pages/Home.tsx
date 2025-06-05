@@ -67,7 +67,7 @@ const Home: React.FC = () => {
             <div className="md:w-1/2">
               <div className="relative rounded-lg overflow-hidden shadow-soft h-full transform hover:scale-[1.02] transition-transform duration-300">
                 <img 
-                  src="/pic/mypic.jpg" 
+                  src="https://chat.openai.com/share/image/file-Knfy5khCuc6q6fgU2dwwYC" 
                   alt="Gandhi Devam" 
                   className="w-full h-[400px] object-cover rounded-lg border-4 border-primary/30"
                 />
