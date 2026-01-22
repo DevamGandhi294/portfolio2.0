@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // import React from 'react';
+=======
+import React from 'react';
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Import pages

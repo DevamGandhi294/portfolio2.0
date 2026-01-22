@@ -9,8 +9,13 @@ interface Achievement {
   color: string;
   bgGradient: string;
   glowColor: string;
+<<<<<<< HEAD
   type: 'winner' | 'participant' | 'top10' | 'grant';
   category: 'competition' | 'hackathon' | 'award' | 'funding';
+=======
+  type: 'winner' | 'participant' | 'top10';
+  category: 'competition' | 'hackathon' | 'award';
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
 }
 
 interface Certification {
@@ -39,46 +44,71 @@ const Achievements: React.FC = () => {
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
       // Check which achievements are visible
       const newVisibleAchievements: number[] = [];
       achievementRefs.current.forEach((ref, index) => {
         if (ref) {
           const rect = ref.getBoundingClientRect();
           const windowHeight = window.innerHeight;
+<<<<<<< HEAD
 
+=======
+          
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
           if (rect.top < windowHeight * 0.8 && rect.bottom > windowHeight * 0.2) {
             newVisibleAchievements.push(index);
           }
         }
       });
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
       // Check which certifications are visible
       const newVisibleCerts: number[] = [];
       certRefs.current.forEach((ref, index) => {
         if (ref) {
           const rect = ref.getBoundingClientRect();
           const windowHeight = window.innerHeight;
+<<<<<<< HEAD
 
+=======
+          
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
           if (rect.top < windowHeight * 0.8 && rect.bottom > windowHeight * 0.2) {
             newVisibleCerts.push(index);
           }
         }
       });
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
       setVisibleAchievements(newVisibleAchievements);
       setVisibleCerts(newVisibleCerts);
     };
 
     window.addEventListener('scroll', handleScroll);
     handleScroll(); // Initial check
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const achievements: Achievement[] = [
     {
       id: 0,
+<<<<<<< HEAD
       title: "Smart India Hackathon 2025 – Winner",
       organization: "Smart India Hackathon (SIH)",
       description: "Winner of Smart India Hackathon 2025 (PS: SH25201) for building an IoT & AI-based monitoring system for skill training equipment and student performance tracking.",
@@ -115,6 +145,8 @@ const Achievements: React.FC = () => {
     },
     {
       id: 3,
+=======
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
       title: "Winner - Arduino Project-A-Thon",
       organization: "Robocraze",
       description: "Awarded for the IoT Rover project featuring real-time GPS tracking, sensor monitoring, and remote control capabilities.",
@@ -126,7 +158,11 @@ const Achievements: React.FC = () => {
       category: 'competition'
     },
     {
+<<<<<<< HEAD
       id: 4,
+=======
+      id: 1,
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
       title: "Final Year Project Award",
       organization: "JHDP College",
       description: "First Place in the Diploma Final Year Project at JHDP College for innovative technical implementation and problem-solving approach.",
@@ -138,7 +174,11 @@ const Achievements: React.FC = () => {
       category: 'award'
     },
     {
+<<<<<<< HEAD
       id: 5,
+=======
+      id: 2,
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
       title: "Top 10 - Hackathon Odoo X Mindbend",
       organization: "Surplus4Society - Application",
       description: "Developed a Flutter and Firebase application that reached the top 10 in this competitive hackathon, demonstrating technical excellence and innovative thinking.",
@@ -150,7 +190,11 @@ const Achievements: React.FC = () => {
       category: 'hackathon'
     },
     {
+<<<<<<< HEAD
       id: 6,
+=======
+      id: 3,
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
       title: "Hackathon - New India Vibrant 2k23",
       organization: "Blockchain Certificate System",
       description: "Developed a blockchain-based certificate verification system that provides secure, tamper-proof credential validation for educational institutions.",
@@ -162,7 +206,11 @@ const Achievements: React.FC = () => {
       category: 'hackathon'
     },
     {
+<<<<<<< HEAD
       id: 7,
+=======
+      id: 4,
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
       title: "Hackathon - NeuraNest Challenge",
       organization: "AI-based Paper Checker",
       description: "Built an AI-based paper checker with feedback system to automate and enhance the grading process while providing constructive feedback to students.",
@@ -174,7 +222,11 @@ const Achievements: React.FC = () => {
       category: 'competition'
     },
     {
+<<<<<<< HEAD
       id: 8,
+=======
+      id: 5,
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
       title: "Data Science Challenge 2.0",
       organization: "Scet College",
       description: "Designed a system to detect real vs. fake human presence using advanced data science techniques and machine learning algorithms at a national-level competition.",
@@ -219,7 +271,11 @@ const Achievements: React.FC = () => {
   ];
 
   const FloatingElement: React.FC<FloatingElementProps> = ({ delay = 0, children, className = "" }) => (
+<<<<<<< HEAD
     <div
+=======
+    <div 
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
       className={`floating-element ${className}`}
       style={{
         animationDelay: `${delay}s`,
@@ -242,7 +298,10 @@ const Achievements: React.FC = () => {
     switch (type) {
       case 'winner': return '🏆 Winner';
       case 'top10': return '🔥 Top 10';
+<<<<<<< HEAD
       case 'grant': return '💰 Grant';
+=======
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
       default: return '✨ Participant';
     }
   };
@@ -253,10 +312,17 @@ const Achievements: React.FC = () => {
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Dynamic floating orbs */}
         <div className="absolute top-20 left-10 w-64 h-64 bg-yellow-500/20 rounded-full blur-3xl animate-pulse"></div>
+<<<<<<< HEAD
         <div className="absolute top-32 right-20 w-80 h-80 bg-purple-500/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
         <div className="absolute bottom-32 left-32 w-72 h-72 bg-blue-500/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
         <div className="absolute bottom-20 right-10 w-56 h-56 bg-green-500/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '3s' }}></div>
 
+=======
+        <div className="absolute top-32 right-20 w-80 h-80 bg-purple-500/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+        <div className="absolute bottom-32 left-32 w-72 h-72 bg-blue-500/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+        <div className="absolute bottom-20 right-10 w-56 h-56 bg-green-500/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '3s'}}></div>
+        
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
         {/* Grid pattern overlay */}
         <div className="absolute inset-0 opacity-10" style={{
           backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.3) 1px, transparent 0)`,
@@ -288,10 +354,18 @@ const Achievements: React.FC = () => {
             <div
               key={achievement.id}
               ref={el => achievementRefs.current[index] = el}
+<<<<<<< HEAD
               className={`group relative transition-all duration-700 ease-out transform ${visibleAchievements.includes(index)
                 ? 'opacity-100 translate-y-0 scale-100'
                 : 'opacity-0 translate-y-20 scale-90'
                 }`}
+=======
+              className={`group relative transition-all duration-700 ease-out transform ${
+                visibleAchievements.includes(index) 
+                  ? 'opacity-100 translate-y-0 scale-100' 
+                  : 'opacity-0 translate-y-20 scale-90'
+              }`}
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
               style={{
                 transitionDelay: `${index * 0.1}s`
               }}
@@ -304,10 +378,17 @@ const Achievements: React.FC = () => {
                 <div className="absolute inset-0 opacity-20">
                   <div className={`absolute inset-0 bg-gradient-to-br ${achievement.bgGradient} transform rotate-12 scale-150 group-hover:rotate-0 transition-transform duration-1000`}></div>
                 </div>
+<<<<<<< HEAD
 
                 {/* Glowing border effect */}
                 <div className={`absolute inset-0 rounded-3xl bg-gradient-to-r ${achievement.color} opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500`}></div>
 
+=======
+                
+                {/* Glowing border effect */}
+                <div className={`absolute inset-0 rounded-3xl bg-gradient-to-r ${achievement.color} opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500`}></div>
+                
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
                 <div className="relative z-10 h-full flex flex-col">
                   {/* Status Badge */}
                   <div className={`inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold mb-4 w-fit ${getTypeColor(achievement.type)}`}>
@@ -316,7 +397,11 @@ const Achievements: React.FC = () => {
 
                   {/* Enhanced Icon */}
                   <div className={`w-20 h-20 flex items-center justify-center bg-gradient-to-br ${achievement.color} rounded-3xl mb-6 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg relative`}>
+<<<<<<< HEAD
                     <div className="text-4xl animate-bounce" style={{ animationDelay: `${index * 0.2}s` }}>
+=======
+                    <div className="text-4xl animate-bounce" style={{animationDelay: `${index * 0.2}s`}}>
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
                       <i className={`${achievement.icon} text-2xl text-primary group-hover:scale-110 transition-transform duration-500`}></i>
                     </div>
                     <div className={`absolute inset-0 bg-gradient-to-br ${achievement.color} opacity-50 rounded-3xl animate-ping group-hover:animate-pulse`}></div>
@@ -326,12 +411,20 @@ const Achievements: React.FC = () => {
                   <h3 className={`text-2xl font-bold mb-3 bg-gradient-to-r ${achievement.color} bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-300`}>
                     {achievement.title}
                   </h3>
+<<<<<<< HEAD
 
+=======
+                  
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
                   {/* Organization */}
                   <p className={`bg-gradient-to-r ${achievement.color} bg-clip-text text-transparent font-semibold text-lg mb-4`}>
                     {achievement.organization}
                   </p>
+<<<<<<< HEAD
 
+=======
+                  
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
                   {/* Description */}
                   <p className="text-gray-300 leading-relaxed flex-grow">
                     {achievement.description}
@@ -364,16 +457,28 @@ const Achievements: React.FC = () => {
               Certifications
             </h3>
           </FloatingElement>
+<<<<<<< HEAD
 
+=======
+          
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {certifications.map((cert, index) => (
               <div
                 key={cert.id}
                 ref={el => certRefs.current[index] = el}
+<<<<<<< HEAD
                 className={`group relative transition-all duration-700 ease-out transform ${visibleCerts.includes(index)
                   ? 'opacity-100 translate-y-0 scale-100'
                   : 'opacity-0 translate-y-20 scale-90'
                   }`}
+=======
+                className={`group relative transition-all duration-700 ease-out transform ${
+                  visibleCerts.includes(index) 
+                    ? 'opacity-100 translate-y-0 scale-100' 
+                    : 'opacity-0 translate-y-20 scale-90'
+                }`}
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
                 style={{
                   transitionDelay: `${index * 0.1}s`
                 }}
@@ -385,10 +490,17 @@ const Achievements: React.FC = () => {
                   <div className="absolute inset-0 opacity-20">
                     <div className={`absolute inset-0 bg-gradient-to-br ${cert.color} transform rotate-12 scale-150 group-hover:rotate-0 transition-transform duration-1000`}></div>
                   </div>
+<<<<<<< HEAD
 
                   {/* Glowing border effect */}
                   <div className={`absolute inset-0 rounded-2xl bg-gradient-to-r ${cert.color} opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500`}></div>
 
+=======
+                  
+                  {/* Glowing border effect */}
+                  <div className={`absolute inset-0 rounded-2xl bg-gradient-to-r ${cert.color} opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500`}></div>
+                  
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
                   <div className="relative z-10 flex items-center">
                     <div className={`w-12 h-12 flex items-center justify-center bg-gradient-to-br ${cert.color} rounded-2xl mr-4 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg`}>
                       <span className="text-2xl">{cert.icon}</span>

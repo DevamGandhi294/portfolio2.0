@@ -1,7 +1,11 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import Skills from '../components/Skills';
+<<<<<<< HEAD
 // import ContactSection from '../components/ContactSection';
+=======
+import ContactSection from '../components/ContactSection';
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
 
 // Add CSS animation keyframes
 const styles = `
@@ -29,7 +33,11 @@ interface FloatingElementProps {
 }
 
 const FloatingElement: React.FC<FloatingElementProps> = ({ delay = 0, children, className = "" }) => (
+<<<<<<< HEAD
   <div
+=======
+  <div 
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
     className={`floating-element ${className}`}
     style={{
       animationDelay: `${delay}s`
@@ -51,10 +59,17 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           {/* Dynamic floating orbs */}
           <div className="absolute top-20 left-10 w-64 h-64 bg-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
+<<<<<<< HEAD
           <div className="absolute top-32 right-20 w-80 h-80 bg-blue-500/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
           <div className="absolute bottom-32 left-32 w-72 h-72 bg-green-500/15 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }}></div>
           <div className="absolute bottom-20 right-10 w-56 h-56 bg-orange-500/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '3s' }}></div>
 
+=======
+          <div className="absolute top-32 right-20 w-80 h-80 bg-blue-500/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+          <div className="absolute bottom-32 left-32 w-72 h-72 bg-green-500/15 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+          <div className="absolute bottom-20 right-10 w-56 h-56 bg-orange-500/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '3s'}}></div>
+          
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
           {/* Grid pattern overlay */}
           <div className="absolute inset-0 opacity-10" style={{
             backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.3) 1px, transparent 0)`,
@@ -67,7 +82,11 @@ const Home: React.FC = () => {
             <div className="md:w-1/2">
               <div className="relative rounded-lg overflow-hidden shadow-soft h-full transform hover:scale-[1.02] transition-transform duration-300">
                 <img
+<<<<<<< HEAD
                   src="src/assets/mypic.jpg"
+=======
+                  src="https://static.readdy.ai/image/a33c314a9c02a579d6173c720a39d07b/93b7a48bbcac6fe0ccb58bccf58ee5bd.webp"
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
                   style={{
                     objectFit: 'cover',
                     objectPosition: 'bottom',
@@ -97,7 +116,11 @@ const Home: React.FC = () => {
                   I'm constantly seeking opportunities to contribute to impactful tech projects while exploring new technologies to enhance my skill set.
                 </p>
               </FloatingElement>
+<<<<<<< HEAD
 
+=======
+              
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
               <FloatingElement delay={0.8}>
                 <div className="flex space-x-4">
                   <a href="https://github.com/DevamGandhi294" target="_blank" rel="noreferrer" className="w-12 h-12 flex items-center justify-center bg-white/10 rounded-full hover:bg-white/20 transition-all duration-300">
@@ -113,7 +136,11 @@ const Home: React.FC = () => {
               </FloatingElement>
             </div>
           </div>
+<<<<<<< HEAD
 
+=======
+          
+>>>>>>> f728e8a75066f4d48e7b78b93f8ba97c516c881a
           <div className="max-w-4xl mx-auto mt-16">
             <FloatingElement delay={1}>
               <h3 className="text-2xl font-semibold mb-6 text-white">Personal Information</h3>
